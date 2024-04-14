@@ -1,0 +1,11 @@
+spring.application.name=FootballOrganizer
+spring.datasource.url=jdbc:postgresql://localhost:5432/test_db
+#spring.datasource.url=jdbc:postgresql://footballorg.ch0eyc66snf2.us-east-2.rds.amazonaws.com:5432/footballOrganizer
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB

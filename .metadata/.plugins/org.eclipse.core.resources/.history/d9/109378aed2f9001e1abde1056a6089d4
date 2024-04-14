@@ -1,0 +1,29 @@
+package com.footballorg.interfaces;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.footballorg.models.Team;
+
+public interface TeamRepository extends JpaRepository <Team, Long>
+{
+	Optional<Team> findByName(String name);
+	
+	Optional<Team> findByConference(String conference);
+	
+	Optional<Team> findByLeague(String league);
+	
+	Optional<Team> findByNetwork(String network);
+
+	Optional<Team> findById(Long id);
+
+	Optional<Team> findByStart(LocalDate start);
+	
+	@Query("SELECT * FROM TEAMS")
+	List<Team> findAll();
+	
+}

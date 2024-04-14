@@ -1,0 +1,5 @@
+package com.footballorg.implementations;
+
+public class TeamServiceImpl {
+
+}

@@ -1,0 +1,26 @@
+package com.footballorg.dtos;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.footballorg.models.Team;
+
+public class teamsDto 
+{
+	private List<Team> teams;
+	
+	public teamsDto()
+	{
+		this.teams = new ArrayList<>();
+	}
+	
+	public teamsDto(List<Team> teams)
+	{
+		this.teams = teams;
+	}
+	
+	public List<Team> getTeams()
+	{
+		return teams;
+	}
+}
